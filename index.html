@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+<div class="top-bg"></div>
+<div class="bottom-bg"></div>
+
+<section class="section-to-do">
+
+
+  <div class="h1-icon">
+      <h1>Todo</h1><button class="theme-icon" aria-label="Toggle theme" aria-pressed="false"></button>
+  </div>
+
+
+  <div class="task-field">
+  <div class="empty-check-mark"></div><input type="text" name="new-task" id="new-task" placeholder="Create a new todo..."></div>
+
+  <!-- --- added tasks --- -->
+   <div class="added-task-wrapper">
+   <ul>
+    <li class="task-added task-deleted" draggable="true"><div class="check-text"><div class="checked"></div>Complete online JavaScript course</div><div class="delete-btn hide"></div></li>
+     <li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>Jog around the park 3x</div><div class="delete-btn hide"></div></li>
+<li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>10 minutes meditation</div><div class="delete-btn hide"></div></li>
+<li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>Read for 1 hour</div><div class="delete-btn hide"></div></li>
+<li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>Pick up groceries</div><div class="delete-btn hide"></div></li>
+<li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>Complete Todo App on Frontend Mentor</div><div class="delete-btn hide"></div></li>
+   </ul>
+
+  <!-- Add dynamic number --> 
+  
+  <div class="control-bar">
+    <p class="item-left"><span class="number">5</span> items left</p>
+
+    <div class="control-middle">
+      <p class="control__text control__active">All</p>
+       <p class="control__text">Active</p>
+       <p class="control__text">Completed</p>
+    </div>
+
+<p class="clear">Clear Completed</p>
+  </div>
+
+  
+</div>
+<!-- --- control middle for mobile --- -->
+ <div class="middle__mobile">
+    <p class="control__text control__active control__text-mobile">All</p>
+     <p class="control__text control__text-mobile">Active</p>
+     <p class="control__text control__text-mobile">Completed</p>
+  </div>
+
+<p class="drag">Drag and drop to reorder list</p>  
+</section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by KaoriA.
+  </footer>
+
+ <script src="main.js"></script>
+</body>
+</html>
