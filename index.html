@@ -29,17 +29,17 @@
 
 
   <div class="task-field">
-  <div class="empty-check-mark"></div><input type="text" name="new-task" id="new-task" placeholder="Create a new todo..."></div>
+  <div class="empty-check-mark"></div><label for="new-task"></label><input type="text" name="new-task" id="new-task" placeholder="Create a new todo..."></div>
 
   <!-- --- added tasks --- -->
    <div class="added-task-wrapper">
    <ul>
-    <li class="task-added task-deleted" draggable="true"><div class="check-text"><div class="checked"></div>Complete online JavaScript course</div><div class="delete-btn hide"></div></li>
-     <li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>Jog around the park 3x</div><div class="delete-btn hide"></div></li>
-<li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>10 minutes meditation</div><div class="delete-btn hide"></div></li>
-<li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>Read for 1 hour</div><div class="delete-btn hide"></div></li>
-<li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>Pick up groceries</div><div class="delete-btn hide"></div></li>
-<li class="task-added" draggable="true"><div class="check-text"><div class="empty-check-mark"></div>Complete Todo App on Frontend Mentor</div><div class="delete-btn hide"></div></li>
+    <li class="task-added task-deleted" draggable="true"><div class="check-text"><button type="button" class="checked"></button>Complete online JavaScript course</div><button type="button" class="delete-btn hide" aria-label="Delete task"></button></li>
+     <li class="task-added" draggable="true"><div class="check-text"><button type="button" class="empty-check-mark" aria-label="Mark as complete"></button>Jog around the park 3x</div><button type="button" class="delete-btn hide" aria-label="Delete task"></button></li>
+<li class="task-added" draggable="true"><div class="check-text"><button type="button" class="empty-check-mark" aria-label="Mark as complete"></button>10 minutes meditation</div><button type="button" class="delete-btn hide" aria-label="Delete task"></button></li>
+<li class="task-added" draggable="true"><div class="check-text"><button type="button" class="empty-check-mark" aria-label="Mark as complete"></button>Read for 1 hour</div><button type="button" class="delete-btn hide" aria-label="Delete task"></button></li>
+<li class="task-added" draggable="true"><div class="check-text"><button type="button" class="empty-check-mark" aria-label="Mark as complete"></button>Pick up groceries</div><button type="button" class="delete-btn hide" aria-label="Delete task"></button></li>
+<li class="task-added" draggable="true"><div class="check-text"><button type="button" class="empty-check-mark" aria-label="Mark as complete"></button>Complete Todo App on Frontend Mentor</div><button type="button" class="delete-btn hide" aria-label="Delete task"></button></li>
    </ul>
 
   <!-- Add dynamic number --> 
@@ -48,12 +48,12 @@
     <p class="item-left"><span class="number">5</span> items left</p>
 
     <div class="control-middle">
-      <p class="control__text control__active">All</p>
-       <p class="control__text">Active</p>
-       <p class="control__text">Completed</p>
+      <button type="button" class="control__text control__active" aria-label="All select">All</button>
+       <button type="button" class="control__text" aria-label="Active select">Active</button>
+       <button type="button" class="control__text" aria-label="Completed select">Completed</button>
     </div>
 
-<p class="clear">Clear Completed</p>
+<button type="button" class="clear" aria-label="Clear completed tasks">Clear Completed</button>
   </div>
 
   
@@ -73,6 +73,6 @@
     Coded by KaoriA.
   </footer>
 
- <script src="main.js"></script>
+ <script src="main01.js"></script>
 </body>
 </html>

@@ -139,6 +139,7 @@ background-color: transparent;
     border: 1px solid var(--border);
     cursor:pointer;
 transition: var(--transition);
+background-color: transparent;
 }
 
 .empty-check-mark:hover{
@@ -165,6 +166,7 @@ border-radius: 5.5556rem;
     background-repeat: no-repeat;
     background-position:center;
     cursor:pointer;
+    border: none;
 }
 
 input{
@@ -230,6 +232,10 @@ ul{
     display: block;
 }
 
+.task-added:focus-within .delte-btn{
+    display: block;
+}
+
 .task-deleted{
     color: var(--pale-color);
     text-decoration: line-through;
@@ -241,6 +247,7 @@ ul{
     background: url('./images/icon-cross.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    border: none;
 }
 
 .delete-btn__dark{
@@ -305,6 +312,10 @@ border-radius: 0 0 var(--radius) var(--radius);
 .control__text{
     font-weight: var(--fw700);
     cursor:pointer;
+    border: none;
+    background-color: transparent;
+    font-family: var(--ff);
+    color: var(--gray-600);
 }
 
 .control__text:hover{
@@ -317,6 +328,10 @@ border-radius: 0 0 var(--radius) var(--radius);
 
 .clear{
     color: var(--border-color);
+    border: none;
+    background-color: transparent;
+    font-family: var(--ff);
+    color: var(--gray-600);
 }
 .clear:hover{
     color: var(--field-text-color);
