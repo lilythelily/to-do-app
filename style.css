@@ -248,6 +248,7 @@ ul{
     background-repeat: no-repeat;
     background-size: contain;
     border: none;
+    background-color: transparent;
 }
 
 .delete-btn__dark{
