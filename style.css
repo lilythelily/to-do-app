@@ -331,7 +331,7 @@ border-radius: 0 0 var(--radius) var(--radius);
     border: none;
     background-color: transparent;
     font-family: var(--ff);
-    color: var(--gray-600);
+    background:none;
 }
 .clear:hover{
     color: var(--field-text-color);
